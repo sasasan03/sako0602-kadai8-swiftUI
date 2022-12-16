@@ -8,14 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var currentValue:Double = 0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView{
+            ZStack{
+                Color.orange
+                VStack {
+                    Text("\(currentValue)")
+                    Slider(value: $currentValue,
+                           in: 0...1
+                    )
+                }
+                .padding()
+            }
+            .tabItem {
+                Text("Item")
+            }
+            ZStack{
+                Color.green
+                VStack {
+                    Text("\(currentValue)")
+                    Slider(value: $currentValue,
+                           in: 0...1
+                    )
+                }
+                .padding()
+            }
+            .tabItem {
+                Text("Item")
+            }
         }
-        .padding()
     }
 }
 
