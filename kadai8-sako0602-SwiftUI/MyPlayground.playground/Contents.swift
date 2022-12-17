@@ -1,3 +1,8 @@
 import UIKit
 
-var greeting = "Hello, playground"
+enum CalcType {
+    case addition
+    case subtraction
+}
+
+
