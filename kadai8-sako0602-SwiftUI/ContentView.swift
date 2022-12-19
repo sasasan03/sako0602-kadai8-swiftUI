@@ -26,26 +26,6 @@ struct ContentView: View {
     }
 }
 
-struct ItemView: View {
-    
-    @Binding var currentValue: Double
-
-    let backgroundColor: Color
-    
-    var body: some View {
-        ZStack{
-            backgroundColor
-            VStack {
-                Text("\(currentValue)")
-                Slider(value: $currentValue,
-                       in: 0...1
-                )
-            }
-            .padding()
-        }
-    }
-}
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
