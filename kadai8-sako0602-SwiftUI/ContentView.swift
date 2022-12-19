@@ -9,57 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var currentValue:Double = 0
+    @State private var currentValue: Double = 0
     @State private var selectedTag = 1
     
     var body: some View {
         TabView(selection: $selectedTag) {
-            let orangeItemView = OrangeItemView(currentValue: $currentValue)
-            let greenItemView = GreenItemView(currentValue: $currentValue)
-            orangeItemView
+            ItemView(currentValue: $currentValue, backgroundColor: Color.orange)
                 .tabItem {
                     Text("Item")
                 }.tag(1)
-            greenItemView
+            ItemView(currentValue: $currentValue, backgroundColor: Color.green)
                 .tabItem {
                     Text("Item")
                 }.tag(2)
-        }
-    }
-}
-
-struct OrangeItemView: View {
-    
-    @Binding var currentValue: Double
-    
-    var body: some View {
-        ZStack{
-            Color.orange
-            VStack {
-                Text("\(currentValue)")
-                Slider(value: $currentValue,
-                       in: 0...1
-                )
-            }
-            .padding()
-        }
-    }
-}
-
-struct GreenItemView: View {
-    
-    @Binding var currentValue: Double
-    
-    var body: some View {
-        ZStack{
-            Color.green
-            VStack {
-                Text("\(currentValue)")
-                Slider(value: $currentValue,
-                       in: 0...1
-                )
-            }
-            .padding()
         }
     }
 }
