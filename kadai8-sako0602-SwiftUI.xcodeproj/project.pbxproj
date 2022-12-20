@@ -12,6 +12,7 @@
 		69DEB99F294C778000E6DC2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69DEB99E294C778000E6DC2A /* Assets.xcassets */; };
 		69DEB9A2294C778000E6DC2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69DEB9A1294C778000E6DC2A /* Preview Assets.xcassets */; };
 		69DEB9CA294DFE5700E6DC2A /* ExperimentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DEB9C9294DFE5700E6DC2A /* ExperimentView.swift */; };
+		69EAE8272951BA2B00BFF37E /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EAE8262951BA2B00BFF37E /* ItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		69DEB9B1294C778000E6DC2A /* kadai8-sako0602-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kadai8-sako0602-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69DEB9C8294DEC1400E6DC2A /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		69DEB9C9294DFE5700E6DC2A /* ExperimentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentView.swift; sourceTree = "<group>"; };
+		69EAE8262951BA2B00BFF37E /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				69DEB99A294C777900E6DC2A /* kadai8_sako0602_SwiftUIApp.swift */,
 				69DEB99C294C777900E6DC2A /* ContentView.swift */,
+				69EAE8262951BA2B00BFF37E /* ItemView.swift */,
 				69DEB9C9294DFE5700E6DC2A /* ExperimentView.swift */,
 				69DEB9C8294DEC1400E6DC2A /* MyPlayground.playground */,
 				69DEB99E294C778000E6DC2A /* Assets.xcassets */,
@@ -240,6 +243,7 @@
 				69DEB9CA294DFE5700E6DC2A /* ExperimentView.swift in Sources */,
 				69DEB99D294C777900E6DC2A /* ContentView.swift in Sources */,
 				69DEB99B294C777900E6DC2A /* kadai8_sako0602_SwiftUIApp.swift in Sources */,
+				69EAE8272951BA2B00BFF37E /* ItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
